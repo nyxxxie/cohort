@@ -52,6 +52,13 @@ project.xml
 stores info about the project (name, description, binary name, binary hash,
 etc)
 
+.cohort
+stores metadata and internal information about the project.  This is meant to
+be used internally by the main cohort app for things like local storage,
+caching, and anything else we wouldn't want to be committed to version control.
+It also is used by the cohort tool to determine if it's operating inside a
+directory that represents a CMP.
+
 symbol ID
 Data items in a binary are identified by their offset in the binary and a
 nonce.  The nonce is used to differentiate references to a particular location
